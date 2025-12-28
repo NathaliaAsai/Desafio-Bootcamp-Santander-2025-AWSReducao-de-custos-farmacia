@@ -1,0 +1,102 @@
+# ** Fundamentos da Computação em Nuvem**
+
+- As a Service (X as a Service)
+
+- Custos do modelo local (On-Premise)
+
+- Comparação: On-Premise × Cloud
+
+- Modelo Híbrido (Hybrid Model)
+
+- Platform (AWS como plataforma)
+
+- Regiões e Zonas (introdução)
+
+
+
+# **Infraestrutura da AWS**
+
+- Infraestrutura da AWS
+
+- Infraestrutura global da AWS
+
+- Regiões e Zonas de Disponibilidade (aprofundado)
+
+- Pontos de Presença (Points of Presence)
+
+- Provisionamento / pré-dimensionamento de recursos da AWS
+
+
+# **Computação em AWS**
+
+- Amazon EC2 (Elastic Compute Cloud)
+
+- Amazon EC2 Auto Scaling
+
+- Elastic Load Balancing
+
+- Serviços de mensageria
+
+- Computação sem servidor (Serverless)
+
+- Containers em AWS
+
+
+# **Redes em AWS**
+
+- Amazon VPC
+
+- Conectividade com a AWS
+
+- Sub-redes (Subnets)
+
+- Listas de Controle de Acesso (ACLs)
+
+
+# **Armazenamento e Bancos de Dados**
+
+- Armazenamento de dados em nuvem (conceito geral)
+
+- Amazon Elastic Block Store (EBS)
+
+- Amazon S3
+
+- Amazon Elastic File System (EFS)
+
+- Amazon Relational Database Service (RDS)
+
+- Amazon DynamoDB
+
+- Outros serviços de banco de dados
+
+- Big Data — Amazon Redshift
+
+=====
+## **Ferramentas possiveis para o projeto** 
+- **Amazon EC2**: Para hospedar servidores virtuais que vão rodar o sistema principal da farmácia. Isso permite flexibilidade para ajustar recursos conforme a demanda.
+
+- **Amazon RDS**: Para o banco de dados da farmácia, caso ele seja relacional (como MySQL ou PostgreSQL). O RDS cuida de backups, atualizações e manutenção, deixando tudo mais fácil.
+
+- **Amazon S3: Para armazenar arquivos, relatórios, imagens de produtos e qualquer outro dado que precise de armazenamento seguro e escalável.
+
+- **AWS Lambda: Para automatizar pequenas tarefas, como processar atualizações de estoque ou enviar notificações, sem precisar manter servidores dedicados.
+
+- **Amazon VPC: Para criar uma rede privada virtual, garantindo que o sistema da farmácia tenha um ambiente de rede isolado e seguro.
+
+- **AWS IAM: Para gerenciar quem pode acessar o quê, criando usuários e definindo permissões, mantendo a segurança dos dados.
+
+- **Amazon CloudWatch: Para monitorar o desempenho do sistema, recebendo alertas se algo precisar de atenção, e garantindo que tudo funcione sem interrupções.
+
+- **AWS Amplify**: O AWS Amplify é uma ferramenta muito útil se você precisar criar ou migrar aplicações web ou móveis. Ele simplifica o desenvolvimento front-end e a conexão com serviços de back-end na AWS. Basicamente, o Amplify ajuda a construir interfaces de usuário, autenticação de usuários, armazenamento de dados e até mesmo hospedagem de sites estáticos de forma bem integrada.
+
+- **AWS Cost Explorer**: O AWS Cost Explorer é uma ferramenta que ajuda você a entender e gerenciar os custos na AWS. Com ele, você pode visualizar seus gastos ao longo do tempo, identificar padrões de uso e descobrir onde é possível otimizar para economizar. Isso é especialmente útil para garantir que a migração do sistema da farmácia fique dentro do orçamento.
+
+- **AWS Shield e WAF**: Além dessas, você pode considerar o AWS Shield, que é um serviço de proteção contra ataques DDoS, e o AWS WAF (Web Application Firewall), que ajuda a proteger suas aplicações web contra exploits e acessos indesejados. Essas ferramentas são importantes para garantir a segurança do sistema.
+
+- **Amazon Pinpoint**: Essa ferramenta é excelente para engajamento de clientes. Você pode usar o Pinpoint para campanhas de marketing direcionadas, enviar promoções por e-mail, SMS ou notificações push para os clientes da farmácia, ajudando a aumentar o relacionamento e as vendas.
+
+- **Amazon Connect**: Se a farmácia precisar de um sistema de atendimento ao cliente por voz ou chat, o Amazon Connect é uma solução de contact center em nuvem que pode ser facilmente implementada. Isso pode melhorar bastante o suporte ao cliente.
+
+- **AWS AppSync**: Se a farmácia tiver um aplicativo móvel ou um sistema que precise sincronizar dados em tempo real (como inventário ou informações de produtos), o AppSync facilita a criação de APIs flexíveis para isso.
+
+- **AWS IoT Core**: Se a farmácia estiver interessada em dispositivos conectados, como sensores de temperatura para medicamentos sensíveis, o IoT Core permite integrar esses dispositivos com facilidade.
