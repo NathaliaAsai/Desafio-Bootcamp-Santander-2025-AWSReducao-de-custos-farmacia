@@ -1,17 +1,21 @@
 # ** Fundamentos da Computação em Nuvem**
+Computação em núvem é a entrega de recursos de TI (servidores, armazenamentos, rededs, banco de dados, etc) pela internet, sob demanda e com pagamento conforme uso. 
 
-- As a Service (X as a Service)
+Possui como caracteristicas principais:
+ - Elasticidade: Aumenta ou diminui instantaneamente os recursos conforme a necessidade;
+ - Escalabilidade: Capacidade de crescer sem grandes invetimentos iniciais;
+ - Sob demanda: você paga apenas pelo que usa, sem comprometer o hardware;
+ - Alta disponibilidade: Serviços distribuidos para evitar falhas.
 
-- Custos do modelo local (On-Premise)
+Tipos de Computação em nuvem:
+ - Infraestrutura as a Service (IaaS): Infraestrutura básica (servidores, redes, armazenamentos). Oferece o mais alto nível de flexibilidade e controle de gerenciamento sobre os recursos de TI.
+ - Platform as a Service (PaaS): plataforma para desenvolvimetno sem gerenciar infraestrutura (não há necessidade de se preocupar com aquisição de recursos, planejamento de capacidade, manutenção de software, correção ou qualquer outro tipo de trabalho genérico necessário para execução dos aplicativos);
+ - Software as a Service (SaaS): geralmente são os aplicativos finais ao usuário (gmail, office365). Não há necessidade em pensar sobre a manutenção do serviço ou gerenciamento da infraestrutura subjacente. Você apenas precisa se preocupar cem como utilizará o softare.
 
-- Comparação: On-Premise × Cloud
-
-- Modelo Híbrido (Hybrid Model)
-
-- Platform (AWS como plataforma)
-
-- Regiões e Zonas (introdução)
-
+- Comparação: On-Premise (local) × Cloud
+ O modelo tradicional (on-premise/local) possui alto investimento inicial (compra de servidores, licenças, espaços físcos), custos contínuos de manutenção e capacidade fixa (escalabilidade é limitada).
+ Em comparação, o Cloud computing ppossui o custo baseado no pay-as-you-go (sob demanda), escalabilidade alta e rápida, e a responsável pela manutenção da infraestrutura é a própria AWS.
+ O modelo híbrido combina as duas formas: on-premise e cloud. É útil para empresas que precisam manter parte dos dados localmente (por complience ou legado) e usar nuvem para escalabilidade.
 
 
 # **Infraestrutura da AWS**
