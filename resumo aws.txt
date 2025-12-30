@@ -1,3 +1,5 @@
+Link video youtube: https://www.youtube.com/shorts/4zxMp_S1TBw
+
 # ** Fundamentos da Computação em Nuvem**
 Computação em núvem é a entrega de recursos de TI (servidores, armazenamentos, rededs, banco de dados, etc) pela internet, sob demanda e com pagamento conforme uso. 
 
@@ -17,25 +19,26 @@ Tipos de Computação em nuvem:
  Em comparação, o Cloud computing ppossui o custo baseado no pay-as-you-go (sob demanda), escalabilidade alta e rápida, e a responsável pela manutenção da infraestrutura é a própria AWS.
  O modelo híbrido combina as duas formas: on-premise e cloud. É útil para empresas que precisam manter parte dos dados localmente (por complience ou legado) e usar nuvem para escalabilidade.
 
+https://aws.amazon.com/pt/what-is-cloud-computing/
+https://aws.amazon.com/pt/types-of-cloud-computing/
+https://aws.amazon.com/pt/compare/the-difference-between-saas-and-on-premises/
+
 
 # **Infraestrutura da AWS**
+É o conjunto de recursos físicos (data centers, redes, servidores e sistemas de energia) que sustentam todos os serviços de nuvem oferecidos pela plataforma. Possui 38 Regiões geográficas (onde ficam localizadas as data centers [Am. do Norte, Europa, Ásia-Pacífico]), totalizando 120 Zonas de dispoonibilidade (Data centers isolados dentro dedd uma região, para garantir alta disponibilidade) e locais de borda/ edge locations (pontos de presença distribuidos em várias cidades e países, usados para entregar conteúdo de forma mais rápida e reduzir a latência).
+Essa infraestrutura foi projetada para entregar maior segurança, disponibilidade, performance, escalabilidade  e flexibilidade, permitindo que empresas de qualquer porte executem aplicações críticas sem manter servidores próprios. 
+A AWS permite provisionar recursos sob demanda, sem necessidade de compra antecipada de hardware.  Ele pode ser manual (o cliente define o tamanho e quantidade) ou automático (serviços ajustam os recursos dinamicamente [auto scaling]).
 
-- Infraestrutura da AWS
-
-- Infraestrutura global da AWS
-
-- Regiões e Zonas de Disponibilidade (aprofundado)
-
-- Pontos de Presença (Points of Presence)
-
-- Provisionamento / pré-dimensionamento de recursos da AWS
+https://aws.amazon.com/pt/about-aws/global-infrastructure/
+https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/using-regions-availability-zones.html
+https://aws.amazon.com/pt/cloudfront/features/
+https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/how-aws-pricing-works.html
 
 
 # **Computação em AWS**
+- Amazon EC2 (Elastic Compute Cloud): 
 
-- Amazon EC2 (Elastic Compute Cloud)
-
-- Amazon EC2 Auto Scaling
+- Amazon EC2 Auto Scaling: Ajusta automaticamente o número de isntancias EC2 conforme a demanda. Ele permite o monitoramento das instências em execução, verificação de integridade personalizadas, Equilibrio entre Zonas de disponibiliade, Varios tipos de instâncias e várias opções de compra, substituição automatizada de instâncias spot, balancemaewnto de carga, escalabilidade, atualização de instância, Hooks do ciclo de vida e suporte para cargas de trabalho com estado.
 
 - Elastic Load Balancing
 
