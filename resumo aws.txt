@@ -36,17 +36,35 @@ https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/how-aws-pricin
 
 
 # **Computação em AWS**
-- Amazon EC2 (Elastic Compute Cloud): 
+- *Amazon EC2 (Elastic Compute Cloud)*: Permite xriar e gerenciar instâncias de servidores virtuais na nuvem. É possível escolher o sistema operacional, o CPU, memória, armazenamento e tipo de rede conforme a necessidade. Ele oferece controle total sobre o aambiente, semelhante a um servidor físico tradicional, porém com a vantagem da elsaticidade da nuvem. Ele suporta diversos tipos de instâncias, otimizadas para computação, memória, armazenamento ou workloads gráficos, além de diferentes modelos como, on- Demand, reserved instances e Spot Instances.
 
-- Amazon EC2 Auto Scaling: Ajusta automaticamente o número de isntancias EC2 conforme a demanda. Ele permite o monitoramento das instências em execução, verificação de integridade personalizadas, Equilibrio entre Zonas de disponibiliade, Varios tipos de instâncias e várias opções de compra, substituição automatizada de instâncias spot, balancemaewnto de carga, escalabilidade, atualização de instância, Hooks do ciclo de vida e suporte para cargas de trabalho com estado.
+- *Amazon EC2 Auto Scaling*: Ajusta automaticamente o número de isntancias EC2 conforme a demanda. Ele permite o monitoramento das instências em execução, verificação de integridade personalizadas, Equilibrio entre Zonas de disponibiliade, Varios tipos de instâncias e várias opções de compra, substituição automatizada de instâncias spot, balancemaewnto de carga, escalabilidade, atualização de instância, Hooks do ciclo de vida e suporte para cargas de trabalho com estado.
 
-- Elastic Load Balancing
+- *Elastic Load Balancing*: O Elastic Load Balancing distribui automaticamente o tráfego de entrada entre múltiplos recursos de computação, como instâncias EC2, containers ou endereços IP. Ele melhora a alta disponibilidade, a tolerância a falhas e o desempenho das aplicações. A AWS oferece diferentes tipos de load balancers, adequados para aplicações HTTP/HTTPS, TCP/UDP e arquiteturas modernas baseadas em microsserviços.
 
-- Serviços de mensageria
+- *Serviços de mensageria*: Os serviços de mensageria da AWS permitem a comunicação assíncrona entre componentes de sistemas distribuídos, desacoplando produtores e consumidores de mensagens. Eles são usados para processamento assíncrono, integração entre sistemas, orquestração de eventos, aumetno de resiliencia e escalabilidade. 
 
-- Computação sem servidor (Serverless)
+- *Computação sem servidor (Serverless)*:No modelo serverless, o desenvolvedor não precisa se preocupar com servidores, sistema operacional ou escalabilidade. A AWS gerencia automaticamente a infraestrutura, enquanto o usuário paga apenas pelo tempo de execução do código. Esse modelo é ideal para:
 
-- Containers em AWS
+Processamento sob demanda
+
+APIs
+
+Automação
+
+Aplicações orientadas a eventos
+
+- *Containers em AWS*é ideal para: 
+
+Processamento sob demanda
+
+APIs
+
+Automação
+
+Aplicações orientadas a eventos
+
+Ele reduz custos operacionais, simplifica a manutenção e acelera o desenvolvimento.
 
 
 # **Redes em AWS**
