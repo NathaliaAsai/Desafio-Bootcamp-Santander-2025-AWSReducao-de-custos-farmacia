@@ -8,31 +8,65 @@ Responsável: Nathalia Asai
 Este relatório apresenta o processo de implementação de ferramentas na empresa Abstergo Industries, realizado por Nathalia Asai. O objetivo do projeto foi elencar 3 serviços AWS, com a finalidade de realizar diminuição de custos imediatos.
 
 ## Descrição do Projeto
-O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma com seus objetivos específicos. A seguir, serãoo descritas as etapas do projeto:
+O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma com seus objetivos específicos. A seguir, serão descritas as etapas do projeto:
 
-Etapa 1: 
-- [Nome da ferramenta]
-- [Foco da ferramenta]
-- [DescriÃ§Ã£o de caso de uso]
+**Etapa 1: Diagnóstico e visibilidade de custos**
+-Objetivo: obter uma visão detalhada dos gastos da empresa na AWS, identificando os principais pontos de consumo e oportunidades iniciais de economia.
 
-Etapa 2: 
-- [Nome da ferramenta]
-- [Foco da ferramenta]
-- [DescriÃ§Ã£o de caso de uso]
+- **AWS Cost Explorere**
+    Foco: Análise, visualizazção e entendimento dos custos da AWS.
+    Descrição de caso de uso: em gastos da empresa na AWS por meio de gráficos e relatórios interativos. Com ele é possível identificar quais serviços ggeram maior impacto financceiro, acompanhar a evolução dos custos ao longo do tempo e apoiar decisões gereenciais relacionadas à redução e otimização de gastos.
 
-Etapa 3: 
-- [Nome da ferramenta]
-- [Foco da ferramenta]
-- [DescriÃ§Ã£o de caso de uso]
+-**AWS Cost and Usage Report**
+    Foco: Detalhamento completo do consumo e dos custos.
+    Descrição do caso de uso: é utilizado para gerar relatórios detalhados sobre o uso e os custos dos serviços AWS. Ele peremite análises mais profundas, podendo ser exportados para planilhas ou ferramentas de BI, oferecendo suporte a auditorias e análises financeiras mais detalhadas. 
 
 
+Etapa 2: Redução imediata de custos operacionais
+- Objetivo: Aplicar ações práticas que geram economia imediata, sem impacto na operação ou necessidade de mudanças tecnicas complexas.
+
+-**Amazon S3 Intelligent-Tiering**
+    Foco: Otimização automática de custos de armazenamento no Amazon S3.
+    Descrição do caso dee uso: utilizado para armazenamento de dados da empresa e mover automaticamente os objetos entre camadas de acesso mais econômicas, conforme a frequencia de uso. Arquivos acessados com menor frequência passam para camadas mais baratas, reduzindo custos de armazenamento sem impacto na disponibilidade ou noacesso dos dados.
+
+-**Amazon S3 Lifecycle Policies**
+    Foco: Automação do ciclo de vida dos dados armazenados.
+    Descrição do caso de uso: são utilizados para definir regras automáticacs de arquivamento ou exclusão de arquivos antigos. Por exemplo, dados que não são acessados após determinado período podem ser movidos para camadas mais baratas ou removidos, contribuindo para a redução contínua de custos.
+
+Etapa 3: Controle financeiro e otimização contínua
+- Objetivo: Estabelecer mecanismos de controle para evitar gastos exccessivos no duturo e garantir uso sustentável da infraestutura em nuvem.
+
+-**AWS Budget**
+    Foco: Controle, monitoramento e previsibilidade dos gastos na AWS
+    Descrição do caso de uso: Utilizado para definir limites de gastos mensais para os serviços AWS utilizados pela empresa. A ferramenta envia alertas automaticos quando os custos se aproximam ou ultrapassam o orçamento estabelecido, permitindo ações preventivas antes que ocorram gastos excessivos.
+
+-**AWS Trusted Advisor**
+    Foco: Recomendações contínuas de boas praticas e economia.
+    Descrição do caso de uso: é utilizado para forncer recomendações automáticas relacionadas à redução de custos, segurança e performance. Ele identifica recursos subutilizaados e oportunidades adicionais de economia, apoiando a empresa na manutenção de uma infraestrutura financeiramente eficiente ao longo do tempo.
+-**Amazon DynamoDB**
+    Foco: Otimização da gestão operacional da farmácia por meio de um banco de dados gerenciado, escalável e de baixo custo.
+    Descrição do caso de uso: é utilizado como base de dados para o controle de produtos da farmácia, permitindo o cadastro e a consulta de informações como: nome do produto, código EAN, Código interno, categoria, quantidade  em estoque, data de entrada e saída, status do produto. Com essa centralização, a farmácia passa a ter acesso rápido às informações, reduzindo retrabalho, erros manuais e tempo gasto em controles paralelos (como planilhas descentralizadas).
 
 ## ConclusÃ£o
-A implementação de ferramentas na empresa Abstergo Industries tem como esperado [benefÃ­cios das ferramentas]*, o que aumentará a eficiencia e a produtividade da empresa. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+A implementação de ferramentas na empresa Abstergo Industries tem como esperado benefícios:
+
+Diretos
+  - Maior visibilidade dos custos em nuvem, permitindo identificar serviços com maior impacto financeiro e apoiar decisões gerenciais mais assertivas.
+  - Redução imediata de gastos com armazenamento, por meio da otimização automática dos dados, sem impacto na operação da empresa.
+  - Controle orçamentário e previsibilidade financeira, evitando gastos inesperados e facilitando o planejamento financeiro mensal.
+  - Centralização das informações de produtos da farmácia, proporcionando acesso rápido e organizado aos dados de estoque.
+
+Indiretos
+  - Otimização do tempo da equipe da farmácia, reduzindo retrabalho e dependência de controles manuais ou planilhas descentralizadas.
+  - Redução de erros operacionais, especialmente no controle de entrada e saída de produtos.
+  - Diminuição de desperdícios, contribuindo para a redução de custos operacionais de forma indireta.
+  - Maior maturidade no uso da nuvem, permitindo que a empresa utilize a AWS não apenas como infraestrutura, mas como apoio estratégico à gestão.
+
+Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
 
 ## Anexos
+- o Arquivo resumo.txt possui um resumo baseado no site da AWS,sobre os principais conceitos e ferramentas relacionados a esse projeto
 
-[lista de anexos, como manuais, documentos, planilhas, entre outros]
 
 Assinatura do Responsável pelo Projeto:
 
