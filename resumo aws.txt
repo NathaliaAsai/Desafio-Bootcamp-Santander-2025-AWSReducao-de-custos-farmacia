@@ -44,57 +44,58 @@ https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/how-aws-pricin
 
 - *Serviços de mensageria*: Os serviços de mensageria da AWS permitem a comunicação assíncrona entre componentes de sistemas distribuídos, desacoplando produtores e consumidores de mensagens. Eles são usados para processamento assíncrono, integração entre sistemas, orquestração de eventos, aumetno de resiliencia e escalabilidade. 
 
-- *Computação sem servidor (Serverless)*:No modelo serverless, o desenvolvedor não precisa se preocupar com servidores, sistema operacional ou escalabilidade. A AWS gerencia automaticamente a infraestrutura, enquanto o usuário paga apenas pelo tempo de execução do código. Esse modelo é ideal para:
+- *Computação sem servidor (Serverless)*:No modelo serverless, o desenvolvedor não precisa se preocupar com servidores, sistema operacional ou escalabilidade. A AWS gerencia automaticamente a infraestrutura, enquanto o usuário paga apenas pelo tempo de execução do código. Esse modelo é ideal para processamento sob demanda, APIs, automação e aplicações orientadas a eventos.Ele reduz custos operacionais, simplifica a manutenção e acelera o desenvolvimento.
 
-Processamento sob demanda
+- *Containers em AWS*: permite o empacotamento de código e dependências de forma padronizada e portátil. Esse modelo facilita a implantação consistente entre ambientes e é amplamente utilizado em arquiteturas de microserviços. Eles permitem a orquestração automática, escalabilidade, alta disponibilidade e integração com serviços de rede, segurança e monitoramento.
 
-APIs
-
-Automação
-
-Aplicações orientadas a eventos
-
-- *Containers em AWS*é ideal para: 
-
-Processamento sob demanda
-
-APIs
-
-Automação
-
-Aplicações orientadas a eventos
-
-Ele reduz custos operacionais, simplifica a manutenção e acelera o desenvolvimento.
-
+https://docs.aws.amazon.com/ec2
+https://docs.aws.amazon.com/autoscaling/ec2
+https://docs.aws.amazon.com/elasticloadbalancing
+https://aws.amazon.com/messaging
+https://aws.amazon.com/serverless
+https://aws.amazon.com/containers
 
 # **Redes em AWS**
+**Conectividade**
+A AWS oferece diversas opções para conectar ambientes locais (on-premise) ou outras redes à nuvem. Essas opções variam conforme latência, custo, segurança e volume de dados. 
+As principais formas de conectividade incluem uma conexão pela internet pública, redes privadas dedicadas, conexões VPN criptografadas e integração híbrida entre data center e nuvem. Essas alternativas permitem criar arquiteturas híbridas ou totalmente em nuvem, garantindo comunicação segura entrer sistemas.
 
-- Amazon VPC
+**Sub-redes (Subnets)**
+São segmentos lógicos da VPC, utilizados para organizar e isolar recursos dentro da rede. Ccada subnet pertence a uma única Zona de Disponibilidadee, o que contribui para alta disponibilidade e tolerância a falhas. Os dois tipos principais são as sub-redes públicas (permitem acesso direto à internet) e privadas (não possuem acesso direto à internet).
+As subnets ajudam a separar camadas da aplicação, como frontend, backend e banco de daos, aumenetando a segurança e o controle do tráfego.
 
-- Conectividade com a AWS
+**Listas de Controle de Acesso (ACLs)**
+As Networks ACLs são camadas adicionais de segurança, atuando no nível da subnet. Elas funcionam como firewalls stateless, controlando o tráfego de entrada e saída com base em regras numeradas. 
+Possuem como características principais a avaliação de regras em ordem numérica, permição ou negação de tráfego explicitamente, são aplicadas a todas as instancias dentro da subnet e funcionam de forma independente do estado da conexão. As ACLs complementam os grgupos de segurança, oferecendo um controle mais amplo do tráfego de rede.
 
-- Sub-redes (Subnets)
-
-- Listas de Controle de Acesso (ACLs)
-
+https://docs.aws.amazon.com/vpc
+https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options
+https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html
 
 # **Armazenamento e Bancos de Dados**
+-**Armazenamento de dados em nuvem (conceito geral)**: permite guardar dados de forma escalável, durável e altamente disponível, sem a necessidade de gerenciar infraestrutura física. Na AWS, os dados podem ser armazenados como blocos, objetos, arquivos e dados estruturados em bancos de dados. Esse modelo oferece alta redundância, recuperação de falhas e pagametnos conforme o uso.
+https://aws.amazon.com/storage
 
-- Armazenamento de dados em nuvem (conceito geral)
+-**Amazon Elastic Block Store (EBS)**: É um serviço de armazenamento em bloco, projetado para ser usado como instâncias EC2. Ele funciona de forma semelhante a um disco rígido virtual, sendo ideal para sistemas operacionais, banco de dados e aplicações que exigem latência. Como principais características podemos citar a persistencia de dados independentemente da instância, diferentes tipos de volumes (SSD e HDD), snapshots para backups e alta disponobilidade dentro de uma Zona de Disponibilidade.
+https://docs.aws.amazon.com/ebs
 
-- Amazon Elastic Block Store (EBS)
+-**Amazon S3**: é um serviço de armazenamento de objetos, altamente escalável e durável. Ele é utilizado para armazenar arquivos, backups, logs, imagens, vídeos e dados para análise.É amplamente utilizado como data lake e base para soluções de Big Data.
+https://docs.aws.amazon.com/s3
 
-- Amazon S3
+-**Amazon Elastic File System (EFS)**: fornece armazenamento de arquivos totalmente gerenciado, que pode ser acessado simultaneamente por várias instâncias EC2. Ele é ideal para aplicações que precisam de acesso compartilhado aos arquivos.
+https://docs.aws.amazon.com/efs
 
-- Amazon Elastic File System (EFS)
+-**Amazon Relational Database Service (RDS)**: O Amazon RDS é um serviço de banco de dados relacional gerenciado, que simplifica tarefas como provisionamento, backups, atualizações e monitoramento. Suporta diversos mecanismos como MySQL, PostgresSQL, MariaDB, Oracle e SQL Server. O RDS oferece alta disponibilidade, replicação automática e escalabilidade vertical e horizontal.
+https://docs.aws.amazon.com/rds
 
-- Amazon Relational Database Service (RDS)
+-**Amazon DynamoDB**: O Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado, do tipo chave-valor e documento. Ele foi projetado para oferecer alta performance em escala, com latência de milissegundos.
+https://docs.aws.amazon.com/dynamodb
 
-- Amazon DynamoDB
+-**Outros serviços de banco de dados**: Além do RDS e DynamoDB, a AWS oferece outros serviços especializados, como bancos de dados em memórias, grafos, documentos e para séries temporais. Esses serviços atendem casos de uso específicos, como cache, análise de relacionamentos e monitoramento de métricas.
 
-- Outros serviços de banco de dados
-
-- Big Data — Amazon Redshift
+-**Big Data — Amazon Redshift**: é um serviço de data warehouse totalmente gerenciado, projetado para análise de grandes volumes de dados usando SQL. Ele é amplamente utilizado em cenários de Big Data e Business Intelligence. Como principais benefícios podemos citar o alto desempenho para consultas analíticas, integração com a Amazon S3, escalabilidade e suporte a ferramentas de BI.
+https://docs.aws.amazon.com/redshift
 
 =====
 ## **Ferramentas possiveis para o projeto** 
