@@ -66,7 +66,7 @@ Recomenda-se a continuidade da utilização das ferramentas implementadas e a bu
 
 ## Anexos
 - o Arquivo resumo.txt possui um resumo baseado no site da AWS,sobre os principais conceitos e ferramentas relacionados a esse projeto
-
+- Link do youtube para o raletório no formato de video: https://youtu.be/wip1HpArRg4
 
 Assinatura do Responsável pelo Projeto:
 
