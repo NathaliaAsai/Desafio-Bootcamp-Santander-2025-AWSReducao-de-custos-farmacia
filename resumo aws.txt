@@ -1,4 +1,4 @@
-Link video youtube: https://www.youtube.com/shorts/4zxMp_S1TBw
+Link video youtube: https://youtu.be/wip1HpArRg4
 
 # ** Fundamentos da Computação em Nuvem**
 Computação em núvem é a entrega de recursos de TI (servidores, armazenamentos, rededs, banco de dados, etc) pela internet, sob demanda e com pagamento conforme uso. 
